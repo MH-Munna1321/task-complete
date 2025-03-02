@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/429cd0b2c8.js" crossorigin="anonymous"></script>
+<style>
+    .poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+</style>
+</head>
+<body class="poppins-medium md:container mt-0 mx-auto px-10 min-h-screen min-w-screen ">
+    <header class="w-full max-w-7xl mx-auto pt-4 ">
+        <nav class="flex items-center justify-between mb-4 pt-3 px-4 py-4 rounded-lg bg-blue-100 ">
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-4xl">Dev <span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex gap-12 items-center">
+            <div class="flex  gap-3">
+                <i class=" text-3xl fa-solid fa-square-check text-blue-600 "></i>
+                <h3 id="headValue" class=" text-3xl text-black font-extrabold">21</h3>
+            </div>
+            <img id="colorChange-btn" src="assets/theme-btn.png" alt="">
+        </div>
+        </nav>
+    </header>
+
+    <main class="flex justify-between max-w-7xl mx-auto">
+        <section>
+            <div class="flex justify-between mb-4 gap-4">
+                <!-- task -->
+            <div class="flex items-center gap-2  bg-blue-100 px-8 py-4 rounded-xl">
+                <span class="text-3xl fa-solid fa-square-check  text-blue-600"></span>
+                <div>
+                <p class="text-lg text-gray-600">Task Assigned</p>
+                <h2  id="taskValue" class="font-extrabold text-3xl">6</h2>
+                </div>
+            </div>
+            <!-- discover -->
+             <div id="discover-btn" class="flex items-center px-20 py-5  bg-gradient-to-r from-indigo-500 to-indigo-300 gap-8 rounded-xl">
+             <img src="assets/board.png" alt="">
+             <p class="text-2xl  text-white">Discover Something <br> New Today!</p>
+             </div>
+             <!-- date -->
+              <div class="flex items-center   bg-blue-100 px-4 py-4 rounded-xl">
+                <img class="mr-3" src="assets/calender.png" alt="">
+                <p class="text-base font-bold" id="set-date"></p>
+            </div>
+            </div>
+            <!-- task section -->
+             <div class="grid grid-cols-3 gap-3">
+                <!-- task-1 -->
+             <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
+                <button class="text-sm btn mb-4 ">ShopEase</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Fix Mobile Button Issue </h2>
+                <p class="text-sm mb-4 ">Debug using Chrome <br> DevTools, check for overlapping </p>
+               <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm">Deadline</p>
+                    <p class="text-base font-bold">21 March 2025</p>
+                    </div>
+                    <button  class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
+               </div>
+             </div>
+             <!-- task-2 -->
+             <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
+                <button class="text-sm btn mb-4 ">CloudSync</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Add Dark Mode </h2>
+                <p class="text-sm mb-4">Store the user's preference in localStorage, update CSS varia</p>
+               <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm">Deadline</p>
+                    <p class="text-base font-bold">21 March 2025</p>
+                    </div>
+                    <button  class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
+               </div>
+             </div>
+            <!-- task-3 -->
+            <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
+                <button class="text-sm btn mb-4 ">SwiftPay</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Optimize  Home page</h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlapping elements, </p>
+               <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm">Deadline</p>
+                    <p class="text-base font-bold">21 March 2025</p>
+                    </div>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn ">Completed</button>
+               </div>
+             </div>
+            <!-- task-4 -->
+            <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
+                <button class="text-sm btn mb-4 ">Meta</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Add new emoji 🤲 </h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlapping </p>
+               <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm">Deadline</p>
+                    <p class="text-base font-bold">21 March 2025</p>
+                    </div>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
+               </div>
+             </div>
+            <!-- task-5 -->
+            <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
+                <button class="text-sm btn mb-4 ">Google LLC</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Integrate OpenAI API </h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlap </p>
+               <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm">Deadline</p>
+                    <p class="text-base font-bold">21 March 2025</p>
+                    </div>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
+               </div>
+             </div>
+            <!-- task-6 -->
+            <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
+                <button class="text-sm btn mb-4 ">Glassdoar</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Improve Job searching </h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlappin</p>
+               <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm">Deadline</p>
+                    <p class="text-base font-bold">21 March 2025</p>
+                    </div>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
+               </div>
+             </div>
+             </div>
+          
+
+        </section>
+
+        <!-- history -->
+         <section class="px-5 w-2/6 bg-blue-100 py-3 ml-3 rounded-xl">
+            <div class="flex items-center gap-3 justify-center">
+                <img src="assets/activity.png" alt="">
+                <h3 class="text-base ">Activity Log</h3>
+                </div>
+                <div class="flex justify-center">
+                    <button id="clear-btn" class="btn bg-blue-600 text-white px-5 py-5 rounded-lg mt-3 text-center">Clear History</button>
+                </div>
+                <div id="history-container" class="mt-4 rounded-md flex flex-col gap-4">
+                    
+                </div>
+         </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
+
