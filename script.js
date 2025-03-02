@@ -83,7 +83,7 @@ document.getElementById("clear-btn").addEventListener("click", function(){
 })
 
 document.getElementById("discover-btn").addEventListener("click", function(){
-  window.location.href = ("../blogs.html")
+  window.location.href = ("blogs.html")
 })
 
 
