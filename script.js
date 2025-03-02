@@ -40,7 +40,7 @@ for (let i = 0; i < complete.length; i++) {
 
     if (taskValue == 0) {
       alert(`
-        Congrats 🥳🥳🥳N You have completed the all task!!!
+        Congrats 🥳🥳🥳 You have completed the all task!!!
         `);
     }
     // Disable Button and Bg color change
